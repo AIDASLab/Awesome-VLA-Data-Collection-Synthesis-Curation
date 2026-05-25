@@ -12,7 +12,7 @@
   <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/>
 </a>
 <img src="https://img.shields.io/badge/Maintained-2026-8A2BE2?style=for-the-badge&logo=github&logoColor=white" alt="Maintained"/>
-<img src="https://img.shields.io/badge/Papers-80%2B-FF6F00?style=for-the-badge&logo=arxiv&logoColor=white" alt="Papers"/>
+<img src="https://img.shields.io/badge/Papers-100+-FF6F00?style=for-the-badge&logo=arxiv&logoColor=white" alt="Papers"/>
 
 <br/><br/>
 
