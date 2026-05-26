@@ -384,6 +384,8 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 
 | Work | Year | Embodiment | Artifact | Core Mechanism |
 | :-- | :-: | :-- | :-- | :-- |
+| [RLDG](https://arxiv.org/abs/2412.09858) | `2024.12` | real robot, single-arm | `Code` `Method` | Trains task-specific RL specialists, rolls them out to generate high-quality data, and distills the data into generalist robot policies. |
+| [Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations](https://arxiv.org/abs/1709.10087) | `2017.09` | dexterous-hand, simulation | `Method` | Uses human demonstrations to accelerate and regularize deep RL for high-DoF dexterous manipulation. |
 | [Beyond Human Demonstrations](https://arxiv.org/abs/2509.19752) | `2025.09` | simulation, arms | `Method` | Diffusion RL experts generate VLA training data. |
 | [Discover, Learn, and Reinforce](https://arxiv.org/abs/2511.19528) | `2025.11` | simulation, arms | `Method` | Diverse RL rollouts for VLA pretraining. |
 | [OmniReset](https://weirdlabuw.github.io/omnireset/) | `2025` | arms, dexterous | `Code` `Method` | Diverse resets, RL experts, and RGB distillation. |
@@ -405,6 +407,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 
 | Work | Year | Artifact | Pipeline |
 | :-- | :-: | :-- | :-- |
+| [Robust Learning from Demonstrations with Mixed Qualities Using Leveraged Gaussian Processes](https://doi.org/10.1109/TRO.2019.2891173) | `2019` | autonomous driving, LfD | `Method` | Estimates demonstration quality via leveraged Gaussian processes to learn robustly from unlabeled mixed-quality demonstrations. |
 | [ABot-M0 / UniACT](https://arxiv.org/abs/2602.11236) | `2026.02` | `Method` | Cleans, standardizes, and balances heterogeneous public datasets into UniACT. |
 | [VLA Foundry](https://github.com/TRI-ML/vla_foundry) | `2026.04` | `Code` `Method` | WebDataset sharding, normalization, action chunking, SE(3) actions, and multi-dataset stats. |
 | [HoloBrain-0 / RoboOrchard](https://arxiv.org/abs/2602.12062) | `2026.02` | `Code` `Method` | Full-stack VLA infrastructure for data curation, training, and deployment. |
