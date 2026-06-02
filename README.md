@@ -209,6 +209,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | Paper | Year | Focus |
 | :-- | :-: | :-- |
 | [Vision-Language-Action in Robotics: A Survey of Datasets, Benchmarks, and Data Engines](https://arxiv.org/abs/2604.23001) | `2026.04` | Data-centric VLA survey. |
+| [3D Gaussian Splatting in Robotics: A Survey](https://arxiv.org/abs/2410.12262) | `2024.10` | Survey of 3DGS scene representations, rendering, and robotics applications. |
 | [Vision Language Action Models in Robotic Manipulation: A Systematic Review](https://arxiv.org/abs/2507.10672) | `2025.07` | Systematic review of VLA models, datasets, and simulation platforms for manipulation. |
 | [Vision-Language-Action Models for Robotics: A Survey](https://vla-survey.github.io/) | `2025` | Broad VLA survey. |
 | [Survey of Vision-Language-Action Models for Embodied Manipulation](https://arxiv.org/abs/2508.15201) | `2025.08` | VLA methods and embodied manipulation. |
@@ -349,6 +350,14 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboTwin](https://robotwin-benchmark.github.io/) | `2025.04` | bimanual | `Data` `Code` | Dual-arm digital-twin-style benchmark. |
 | [RoboTwin 2.0](https://arxiv.org/abs/2506.18088) | `2025.06` | bimanual, cross-embodiment | `Data` `Code` | Scalable dual-arm generator. |
 | [GenSim](https://arxiv.org/abs/2310.01361) | `2023.10` | simulation, manipulation | `Code` `Method` | LLM-generated simulation tasks, curricula, and expert demonstrations. |
+| [RoboSplat](https://arxiv.org/abs/2504.13175) | `2025.04` | 3DGS, manipulation | `Method` | Edits 3D Gaussians to generate one-shot visual demonstrations across object pose/type, camera, lighting, scene appearance, and embodiment changes. |
+| [RoboGSim](https://arxiv.org/abs/2411.11839) | `2024.11` | 3DGS, simulation | `Code` `Method` | Real2Sim2Real robotic simulator combining 3DGS reconstruction with physics-engine interaction for synthetic trajectories, scenes, objects, and viewpoints. |
+| [SplatSim](https://arxiv.org/abs/2409.10161) | `2024.09` | 3DGS, simulation | `Method` | Uses Gaussian splats as photoreal rendering primitives for zero-shot sim-to-real RGB manipulation policy training. |
+| [DISCOVERSE](https://arxiv.org/abs/2507.21981) | `2025.07` | 3DGS, simulation | `Code` `Method` | Open-source Real2Sim2Real simulator using 3DGS for high-fidelity rendering and MuJoCo for physics. |
+| [RoboSimGS](https://arxiv.org/abs/2510.10637) | `2025.10` | 3DGS, simulation | `Method` | Hybrid 3DGS-plus-mesh framework where 3DGS captures photoreal appearance and mesh primitives provide physically interactive manipulation assets. |
+| [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3DGS](https://arxiv.org/abs/2601.03200) | `2026.01` | 3DGS, digital twin | `Method` | Converts sparse RGB 3DGS reconstructions into semantically labeled, collision-ready digital twins integrated with Unity, ROS2, and MoveIt. |
+| [EmbodiedGen / RoboSplatter](https://arxiv.org/abs/2506.10600) | `2025.06` | 3DGS, embodied simulation | `Code` `Method` | Generative 3D world engine with RoboSplatter for high-fidelity 3DGS rendering inside embodied simulation pipelines. |
+| [GaussGym](https://arxiv.org/abs/2510.15352) | `2025.10` | 3DGS, locomotion | `Code` `Data` | Real-to-sim framework that plugs 3DGS rendering into vectorized physics simulators for high-throughput pixel-based robot learning. |
 | [Video2Policy](https://arxiv.org/abs/2502.09886) | `2025.02` | simulation, human / internet video | `Method` | Reconstructs manipulation tasks from internet RGB videos and trains RL policies with LLM-generated rewards. |
 | [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) | `2023.10` | simulation, world-model | `Method` | Learns interactive simulators from real-world data for zero-shot policy transfer. |
 | [Scaling Robot Learning with Semantically Imagined Experience](https://arxiv.org/abs/2302.11550) | `2023.02` | simulation, single-arm | `Method` | Semantically imagined experience for scaling robot learning with generated variations. |
@@ -400,6 +409,10 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [EVA](https://arxiv.org/abs/2603.17808) | `2026.03` | bimanual, arms | `Method` | Inverse-dynamics reward for executable videos. |
 | [TraceGen / TraceForge](https://arxiv.org/abs/2511.21690) | `2025.11` | cross-embodiment | `Method` | 3D trace-space world modeling and trace data pipeline. |
 | [MotuBrain](https://arxiv.org/abs/2604.27792) | `2026.04` | general robotics | `Method` | Unified policy, world model, inverse dynamics, and video-action prediction. |
+| [Physically Embodied Gaussian Splatting](https://arxiv.org/abs/2406.10788) | `2024.06` | 3DGS, world-model | `Method` | Dual Gaussian-particle representation that couples photoreal rendering with particle-based physical prediction and online correction. |
+| [ManiGaussian](https://arxiv.org/abs/2403.08321) | `2024.03` | 3DGS, manipulation | `Method` | Dynamic Gaussian splatting world model that propagates semantic scene dynamics for multi-task manipulation. |
+| [ArtGS](https://arxiv.org/abs/2507.02600) | `2025.07` | 3DGS, articulated objects | `Method` | Visual-physical Gaussian splatting framework for articulated object modeling, joint estimation, and manipulation. |
+| [Forecast-GS](https://arxiv.org/abs/2605.11144) | `2026.05` | 3DGS, planning | `Method` | Forecasts task-completed 3D Gaussian states to evaluate candidate language-guided pick-and-place actions under partial observations. |
 | [LAPA](https://github.com/LatentActionPretraining/LAPA) | `2024` | video, robot | `Code` `Weights` | Action-free video to latent actions. |
 | [UniVLA](https://github.com/OpenDriveLab/UniVLA) | `2025.05` | robot, ego video | `Code` | Task-centric latent actions. |
 | [LAP](https://lap-vla.github.io/) | `2025` | cross-embodiment | `Code` `Weights` | Low-level actions represented as language. |
