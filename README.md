@@ -405,31 +405,12 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | Work | Year | Embodiment | Artifact | Core Mechanism |
 | :-- | :-: | :-- | :-- | :-- |
 | [DreamGen](https://arxiv.org/abs/2505.12705) | `2025.05` | arms, humanoid | `Method` | Video world model to action-labeled neural trajectories. |
-| [Large Video Planner](https://arxiv.org/abs/2512.15840) | `2025.12` | robot foundation model, video | `Data` `Weights` | Uses large-scale video pretraining to generate video plans that can be post-processed into executable robot actions. |
-| [Action100M](https://arxiv.org/abs/2601.10592) | `2026.01` | human / internet video | `Data` | Dense open-vocabulary action annotations and captions for physical world modeling and video-action pretraining. |
-| [RoboDreamer](https://arxiv.org/abs/2404.12377) | `2024.04` | world-model, video | `Method` | Compositional video world model for robot imagination and planning under unseen object-action combinations. |
-| [3D-VLA](https://arxiv.org/abs/2403.09631) | `2024.03` | 3D, world-model | `Method` | 3D VLA generative world model with embodied diffusion models and 3D instruction data curation. |
-| [IRASim](https://gen-irasim.github.io/) | `2025` | world-model, manipulation | `Code` `Method` | Fine-grained action-conditioned video world model for robot manipulation planning and evaluation. |
-| [Genie](https://arxiv.org/abs/2402.15391) | `2024.02` | generative environments | `Method` | Generative interactive environments from internet videos; adjacent world-model substrate for embodied agents. |
-| [DOMINO](https://arxiv.org/abs/2603.15620) | `2026.03` | dynamic manipulation | `Data` `Code` `Benchmark` | Dynamic manipulation dataset and benchmark with 110K+ expert trajectories and dynamics-aware VLA evaluation. |
 | [RLDX-1](https://arxiv.org/abs/2605.03269) | `2026.05` | dexterous, humanoid | `Code` `Weights` `Method` | Video generation, motion filtering, and inverse dynamics labels. |
 | [RoboCurate](https://arxiv.org/abs/2602.18742) | `2026.02` | humanoid, dexterous | `Method` | Action-verified neural trajectory filtering. |
 | [EVA](https://arxiv.org/abs/2603.17808) | `2026.03` | bimanual, arms | `Method` | Inverse-dynamics reward for executable videos. |
 | [TC-IDM](https://arxiv.org/abs/2601.18323) | `2026.01` | generated video, 3D motion | `Method` | Tool-centric inverse dynamics model that converts world-model video plans into 6-DoF end-effector motions and controls. |
-| [Veo-Act](https://arxiv.org/abs/2604.04502) | `2026.04` | video world model, dexterous | `Method` | Uses frontier video generation as a high-level motion planner and inverse dynamics / VLA policies to ground generated futures into actions. |
 | [NovaFlow](https://arxiv.org/abs/2510.08568) | `2025.10` | generated video, 3D flow | `Method` | Distills generated videos into 3D actionable object flow and realizes it with grasp proposals, trajectory optimization, and particle dynamics. |
 | [TraceGen / TraceForge](https://arxiv.org/abs/2511.21690) | `2025.11` | cross-embodiment | `Method` | 3D trace-space world modeling and trace data pipeline. |
-| [MotuBrain](https://arxiv.org/abs/2604.27792) | `2026.04` | general robotics | `Method` | Unified policy, world model, inverse dynamics, and video-action prediction. |
-| [Physically Embodied Gaussian Splatting](https://arxiv.org/abs/2406.10788) | `2024.06` | 3DGS, world-model | `Method` | Dual Gaussian-particle representation that couples photoreal rendering with particle-based physical prediction and online correction. |
-| [ManiGaussian](https://arxiv.org/abs/2403.08321) | `2024.03` | 3DGS, manipulation | `Method` | Dynamic Gaussian splatting world model that propagates semantic scene dynamics for multi-task manipulation. |
-| [ArtGS](https://arxiv.org/abs/2507.02600) | `2025.07` | 3DGS, articulated objects | `Method` | Visual-physical Gaussian splatting framework for articulated object modeling, joint estimation, and manipulation. |
-| [Forecast-GS](https://arxiv.org/abs/2605.11144) | `2026.05` | 3DGS, planning | `Method` | Forecasts task-completed 3D Gaussian states to evaluate candidate language-guided pick-and-place actions under partial observations. |
-| [LAPA](https://github.com/LatentActionPretraining/LAPA) | `2024` | video, robot | `Code` `Weights` | Action-free video to latent actions. |
-| [UniVLA](https://github.com/OpenDriveLab/UniVLA) | `2025.05` | robot, ego video | `Code` | Task-centric latent actions. |
-| [LAP](https://lap-vla.github.io/) | `2025` | cross-embodiment | `Code` `Weights` | Low-level actions represented as language. |
-| [Interleave-VLA](https://arxiv.org/abs/2505.02152) | `2025.05` | OXE-derived | `Data` `Method` | Converts OXE-style data to interleaved image-text instructions. |
-| [VLAW](https://arxiv.org/abs/2602.12063) | `2026.02` | real robot | `Method` | Iterative co-improvement of VLA policy and world model. |
-| [InternVLA-A1](https://arxiv.org/abs/2601.02456) | `2026.01` | hybrid synthetic-real | `Method` | Unified understanding, generation, and action model trained on hybrid synthetic-real data. |
 
 <a id="-rl--expert-policy-rollouts"></a>
 ### 🎯 RL & Expert-Policy Rollouts
