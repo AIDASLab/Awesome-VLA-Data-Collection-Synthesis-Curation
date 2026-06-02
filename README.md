@@ -349,6 +349,8 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [IntervenGen](https://arxiv.org/abs/2405.01472) | `2024.05` | simulation, real-world | `Method` | Expands a small number of human corrective interventions into synthetic recovery demonstrations for robust imitation learning. |
 | [CyberDemo](https://arxiv.org/abs/2402.14795) | `2024.02` | dexterous-hand, simulation | `Data` `Method` | Simulated human demonstrations with domain and task augmentation for real-world dexterous manipulation transfer. |
 | [RoboGen](https://robogen-ai.github.io/) | `2023.11` | manipulation, locomotion | `Code` `Method` | Generative simulation for tasks and supervision. |
+| [GenSim2](https://arxiv.org/abs/2410.03645) | `2024.10` | simulation, articulated objects | `Code` `Method` | Multimodal LLM task generation with planning and RL solvers that generate demonstrations for articulated manipulation. |
+| [Scaling Up and Distilling Down](https://arxiv.org/abs/2307.14535) | `2023.07` | simulation, language-conditioned | `Code` `Data` | LLM-guided planners generate diverse language-labeled robot trajectories that are distilled into a multitask visuomotor policy. |
 | [RoboCasa](https://robocasa.ai/) | `2024.06` | household manipulation | `Data` `Code` | Generated household tasks and demos. |
 | [RoboCasa365](https://arxiv.org/abs/2603.04356) | `2026.03` | household, mobile manipulation | `Data` `Method` | Large-scale household task suite. |
 | [RoboTwin](https://robotwin-benchmark.github.io/) | `2025.04` | bimanual | `Data` `Code` | Dual-arm digital-twin-style benchmark. |
@@ -435,14 +437,11 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | Work | Year | Embodiment | Artifact | Core Mechanism |
 | :-- | :-: | :-- | :-- | :-- |
 | [RLDG](https://arxiv.org/abs/2412.09858) | `2024.12` | real robot, single-arm | `Code` `Method` | Trains task-specific RL specialists, rolls them out to generate high-quality data, and distills the data into generalist robot policies. |
+| [PLD / Deployment-Aligned Data](https://publications.ri.cmu.edu/online-policy-improvement-via-reliable-critics-and-deployment-aligned-data) | `2026.05` | sim-real, VLA post-training | `Method` | Trains lightweight residual RL specialists, collects recovery trajectories from base-policy states, and distills them back into the VLA. |
+| [RL-Driven Data Generation for Dexterous Grasping](https://arxiv.org/abs/2504.18084) | `2025.04` | dexterous-hand, simulation | `Method` | Uses a residual RL teacher skill to generate contact-rich grasping trajectories across object geometries for vision-action policy training. |
 | [Learning Complex Dexterous Manipulation with Deep Reinforcement Learning and Demonstrations](https://arxiv.org/abs/1709.10087) | `2017.09` | dexterous-hand, simulation | `Method` | Uses human demonstrations to accelerate and regularize deep RL for high-DoF dexterous manipulation. |
 | [Beyond Human Demonstrations](https://arxiv.org/abs/2509.19752) | `2025.09` | simulation, arms | `Method` | Diffusion RL experts generate VLA training data. |
 | [Discover, Learn, and Reinforce](https://arxiv.org/abs/2511.19528) | `2025.11` | simulation, arms | `Method` | Diverse RL rollouts for VLA pretraining. |
-| [VLA-RL](https://arxiv.org/abs/2505.18719) | `2025.05` | simulation, manipulation | `Method` | Online RL framework for pretrained autoregressive VLAs with process reward models and vectorized environments. |
-| [SimpleVLA-RL](https://arxiv.org/abs/2509.09674) | `2025.09` | simulation, manipulation | `Code` `Method` | Scalable RL training stack for VLA policies with trajectory sampling, parallel rendering, and optimized rollout losses. |
-| [World-Env](https://arxiv.org/abs/2509.24948) | `2025.09` | world-model, manipulation | `Method` | Replaces physical interaction with a video world-model virtual environment and VLM reward reflector for VLA RL post-training. |
-| [World-Gymnast](https://arxiv.org/abs/2602.02454) | `2026.02` | world-model, manipulation | `Code` `Method` | Rolls VLA policies out in an action-conditioned video world model and uses VLM rewards for RL fine-tuning. |
-| [GR-RL](https://arxiv.org/abs/2512.01801) | `2025.12` | dexterous, long-horizon | `Method` | Filters demonstrations with offline-RL progress values, adds morphology augmentation, and performs online RL for precise dexterous manipulation. |
 | [OmniReset](https://weirdlabuw.github.io/omnireset/) | `2025` | arms, dexterous | `Code` `Method` | Diverse resets, RL experts, and RGB distillation. |
 | [RLinf-Co](https://arxiv.org/abs/2602.12628) | `2026.02` | sim-real | `Method` | Simulation RL with real-data anchoring. |
 | [Agentic-VLA](https://arxiv.org/abs/2605.22896) | `2026.05` | simulation, dual-arm | `Method` | Adaptive reward synthesis, language-guided exploration, and experience memory. |
