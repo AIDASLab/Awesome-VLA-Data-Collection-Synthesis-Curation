@@ -97,9 +97,10 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 <div align="left">
 <sub>
 • <a href="#-real-world-capture--robot-free-collection">Real-World Capture</a><br/>
-• <a href="#-simulation--digital-twin-generation">Simulation & Digital Twins</a><br/>
+• <a href="#-simulation-based-demonstration-generation">Simulation-Based Demos</a><br/>
+• <a href="#-3d-reconstruction--digital-twin-generation">3D Reconstruction</a><br/>
 • <a href="#-cross-embodiment-augmentation--retargeting">Cross-Embodiment</a><br/>
-• <a href="#-neural-trajectories--world-models">Neural Trajectories</a><br/>
+• <a href="#-neural-trajectory-synthesis--labeling">Neural Trajectories</a><br/>
 • <a href="#-rl--expert-policy-rollouts">RL Experts</a>
 </sub>
 </div>
@@ -159,9 +160,10 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 
 ## 🤖 Data Engines
 - [Real-World Capture & Robot-Free Collection](#-real-world-capture--robot-free-collection)
-- [Simulation & Digital-Twin Generation](#-simulation--digital-twin-generation)
+- [Simulation-Based Demonstration Generation](#-simulation-based-demonstration-generation)
+- [3D Reconstruction & Digital-Twin Generation](#-3d-reconstruction--digital-twin-generation)
 - [Cross-Embodiment Augmentation & Retargeting](#-cross-embodiment-augmentation--retargeting)
-- [Neural Trajectories & World Models](#-neural-trajectories--world-models)
+- [Neural Trajectory Synthesis & Labeling](#-neural-trajectory-synthesis--labeling)
 - [RL & Expert-Policy Rollouts](#-rl--expert-policy-rollouts)
 
 ## 🧹 Curation, Cleaning & Preprocessing
@@ -335,8 +337,8 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [MV-UMI](https://mv-umi.github.io/) | `2026` | cross-embodiment | `Method` | Multi-view UMI-style interface for cross-embodiment learning. |
 | [Touch in the Wild](https://arxiv.org/abs/2507.15062) | `2025.07` | robot-free, tactile | `Method` | Portable visuo-tactile gripper for fine-grained in-the-wild demonstrations. |
 
-<a id="-simulation--digital-twin-generation"></a>
-### 🏗️ Simulation & Digital-Twin Generation
+<a id="-simulation-based-demonstration-generation"></a>
+### 🏗️ Simulation-Based Demonstration Generation
 
 | Work | Year | Embodiment | Artifact | Core Mechanism |
 | :-- | :-: | :-- | :-- | :-- |
@@ -344,7 +346,6 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [SkillMimicGen / SkillGen](https://arxiv.org/abs/2410.18907) | `2024.10` | single-arm | `Method` | Skill segmentation and motion-planner stitching. |
 | [DexMimicGen](https://github.com/NVlabs/dexmimicgen) | `2024.10` | bimanual, dexterous | `Data` `Code` | Bimanual dexterous demo generation. |
 | [SoftMimicGen](https://arxiv.org/abs/2603.25725) | `2026.03` | deformable, bimanual, humanoid | `Method` | MimicGen-style automated data generation for rope, towel, tissue, stuffed-animal, surgical, and humanoid deformable manipulation tasks. |
-| [DemoGen](https://arxiv.org/abs/2502.16932) | `2025.02` | arm, bimanual, dexterous | `Code` `Method` | 3D point-cloud scene and trajectory synthesis. |
 | [DiffGen](https://arxiv.org/abs/2405.07309) | `2024.05` | simulation, manipulation | `Method` | Differentiable physics, differentiable rendering, and VLM objectives for automatic robot demonstration generation. |
 | [IntervenGen](https://arxiv.org/abs/2405.01472) | `2024.05` | simulation, real-world | `Method` | Expands a small number of human corrective interventions into synthetic recovery demonstrations for robust imitation learning. |
 | [CyberDemo](https://arxiv.org/abs/2402.14795) | `2024.02` | dexterous-hand, simulation | `Data` `Method` | Simulated human demonstrations with domain and task augmentation for real-world dexterous manipulation transfer. |
@@ -356,6 +357,23 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboTwin](https://robotwin-benchmark.github.io/) | `2025.04` | bimanual | `Data` `Code` | Dual-arm digital-twin-style benchmark. |
 | [RoboTwin 2.0](https://arxiv.org/abs/2506.18088) | `2025.06` | bimanual, cross-embodiment | `Data` `Code` | Scalable dual-arm generator. |
 | [GenSim](https://arxiv.org/abs/2310.01361) | `2023.10` | simulation, manipulation | `Code` `Method` | LLM-generated simulation tasks, curricula, and expert demonstrations. |
+| [Video2Policy](https://arxiv.org/abs/2502.09886) | `2025.02` | simulation, human / internet video | `Method` | Reconstructs manipulation tasks from internet RGB videos and trains RL policies with LLM-generated rewards. |
+| [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) | `2023.10` | simulation, world-model | `Method` | Learns interactive simulators from real-world data for zero-shot policy transfer. |
+| [Scaling Robot Learning with Semantically Imagined Experience](https://arxiv.org/abs/2302.11550) | `2023.02` | simulation, single-arm | `Method` | Semantically imagined experience for scaling robot learning with generated variations. |
+| [MolmoB0T / MolmoBot-Engine](https://www.microsoft.com/en-us/research/publication/molmob0t-large-scale-simulation-enables-zero-shot-manipulation/) | `2025` | single-arm, mobile manipulator | `Data` `Code` | Procedural simulation engine. |
+| [AGT-World](https://arxiv.org/abs/2602.12065) | `2026.02` | simulation, long-horizon | `Method` | Affordance-graph task worlds with self-evolving VLM/geometric feedback for task and policy generation. |
+| [Generative Simulation for pHRI](https://arxiv.org/abs/2604.08664) | `2026.04` | physical HRI, simulation | `Method` | Text2sim2real pipeline for synthesizing assistive pHRI scenes, soft-body humans, and robot motion trajectories. |
+| [CP-Gen](https://arxiv.org/abs/2508.03944) | `2025.08` | single-arm | `Method` | Constraint-preserving keypoint generation. |
+| [DynaMimicGen](https://arxiv.org/abs/2511.16223) | `2025.11` | dynamic manipulation | `Method` | Data generation for dynamic tasks. |
+| [MoMaGen](https://arxiv.org/abs/2510.18316) | `2025.10` | bimanual mobile | `Method` | Reachability and visibility constrained generation. |
+| [HumanoidGen](https://arxiv.org/abs/2507.00833) | `2025.07` | humanoid, dexterous | `Data` `Code` | LLM/MCTS-generated humanoid dexterous demos. |
+
+<a id="-3d-reconstruction--digital-twin-generation"></a>
+### 🧱 3D Reconstruction & Digital-Twin Generation
+
+| Work | Year | Embodiment | Artifact | Core Mechanism |
+| :-- | :-: | :-- | :-- | :-- |
+| [DemoGen](https://arxiv.org/abs/2502.16932) | `2025.02` | arm, bimanual, dexterous | `Code` `Method` | 3D point-cloud scene and trajectory synthesis. |
 | [RoboSplat](https://arxiv.org/abs/2504.13175) | `2025.04` | 3DGS, manipulation | `Method` | Edits 3D Gaussians to generate one-shot visual demonstrations across object pose/type, camera, lighting, scene appearance, and embodiment changes. |
 | [RoboGSim](https://arxiv.org/abs/2411.11839) | `2024.11` | 3DGS, simulation | `Code` `Method` | Real2Sim2Real robotic simulator combining 3DGS reconstruction with physics-engine interaction for synthetic trajectories, scenes, objects, and viewpoints. |
 | [SplatSim](https://arxiv.org/abs/2409.10161) | `2024.09` | 3DGS, simulation | `Method` | Uses Gaussian splats as photoreal rendering primitives for zero-shot sim-to-real RGB manipulation policy training. |
@@ -364,19 +382,9 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3DGS](https://arxiv.org/abs/2601.03200) | `2026.01` | 3DGS, digital twin | `Method` | Converts sparse RGB 3DGS reconstructions into semantically labeled, collision-ready digital twins integrated with Unity, ROS2, and MoveIt. |
 | [EmbodiedGen / RoboSplatter](https://arxiv.org/abs/2506.10600) | `2025.06` | 3DGS, embodied simulation | `Code` `Method` | Generative 3D world engine with RoboSplatter for high-fidelity 3DGS rendering inside embodied simulation pipelines. |
 | [GaussGym](https://arxiv.org/abs/2510.15352) | `2025.10` | 3DGS, locomotion | `Code` `Data` | Real-to-sim framework that plugs 3DGS rendering into vectorized physics simulators for high-throughput pixel-based robot learning. |
-| [Video2Policy](https://arxiv.org/abs/2502.09886) | `2025.02` | simulation, human / internet video | `Method` | Reconstructs manipulation tasks from internet RGB videos and trains RL policies with LLM-generated rewards. |
-| [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) | `2023.10` | simulation, world-model | `Method` | Learns interactive simulators from real-world data for zero-shot policy transfer. |
-| [Scaling Robot Learning with Semantically Imagined Experience](https://arxiv.org/abs/2302.11550) | `2023.02` | simulation, single-arm | `Method` | Semantically imagined experience for scaling robot learning with generated variations. |
 | [Real2Render2Real](https://arxiv.org/abs/2505.09601) | `2025.05` | robot arms | `Method` | Real scan and human video to rendered robot demonstrations. |
-| [MolmoB0T / MolmoBot-Engine](https://www.microsoft.com/en-us/research/publication/molmob0t-large-scale-simulation-enables-zero-shot-manipulation/) | `2025` | single-arm, mobile manipulator | `Data` `Code` | Procedural simulation engine. |
 | [EMMA](https://arxiv.org/abs/2509.22407) | `2025.09` | real-world, single-arm | `Method` | Generative visual transfer via multi-view consistent embodied manipulation video editing. |
-| [AGT-World](https://arxiv.org/abs/2602.12065) | `2026.02` | simulation, long-horizon | `Method` | Affordance-graph task worlds with self-evolving VLM/geometric feedback for task and policy generation. |
-| [Generative Simulation for pHRI](https://arxiv.org/abs/2604.08664) | `2026.04` | physical HRI, simulation | `Method` | Text2sim2real pipeline for synthesizing assistive pHRI scenes, soft-body humans, and robot motion trajectories. |
 | [AOMGen](https://arxiv.org/abs/2512.18396) | `2025.12` | articulated objects, simulation | `Method` | Photoreal, physics-consistent demonstration generation for articulated objects from a single scan, demonstration, and digital assets. |
-| [CP-Gen](https://arxiv.org/abs/2508.03944) | `2025.08` | single-arm | `Method` | Constraint-preserving keypoint generation. |
-| [DynaMimicGen](https://arxiv.org/abs/2511.16223) | `2025.11` | dynamic manipulation | `Method` | Data generation for dynamic tasks. |
-| [MoMaGen](https://arxiv.org/abs/2510.18316) | `2025.10` | bimanual mobile | `Method` | Reachability and visibility constrained generation. |
-| [HumanoidGen](https://arxiv.org/abs/2507.00833) | `2025.07` | humanoid, dexterous | `Data` `Code` | LLM/MCTS-generated humanoid dexterous demos. |
 
 <a id="-cross-embodiment-augmentation--retargeting"></a>
 ### 🔁 Cross-Embodiment Augmentation & Retargeting
@@ -399,8 +407,8 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [SPIDER](https://jc-bao.github.io/spider/) | `2026` | dexterous, humanoid | `Method` | Physics-based retargeting for hands and humanoids. |
 | [Perceptive Humanoid Parkour](https://arxiv.org/abs/2602.15827) | `2026.02` | humanoid | `Method` | Retargets and composes atomic human parkour skills with motion matching, then distills them into a depth-based real-robot policy. |
 
-<a id="-neural-trajectories--world-models"></a>
-### 🧠 Neural Trajectories & World Models
+<a id="-neural-trajectory-synthesis--labeling"></a>
+### 🧠 Neural Trajectory Synthesis & Labeling
 
 | Work | Year | Embodiment | Artifact | Core Mechanism |
 | :-- | :-: | :-- | :-- | :-- |
@@ -424,8 +432,6 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [Beyond Human Demonstrations](https://arxiv.org/abs/2509.19752) | `2025.09` | simulation, arms | `Method` | Diffusion RL experts generate VLA training data. |
 | [Discover, Learn, and Reinforce](https://arxiv.org/abs/2511.19528) | `2025.11` | simulation, arms | `Method` | Diverse RL rollouts for VLA pretraining. |
 | [OmniReset](https://weirdlabuw.github.io/omnireset/) | `2025` | arms, dexterous | `Code` `Method` | Diverse resets, RL experts, and RGB distillation. |
-| [RLinf-Co](https://arxiv.org/abs/2602.12628) | `2026.02` | sim-real | `Method` | Simulation RL with real-data anchoring. |
-| [Agentic-VLA](https://arxiv.org/abs/2605.22896) | `2026.05` | simulation, dual-arm | `Method` | Adaptive reward synthesis, language-guided exploration, and experience memory. |
 
 <br/>
 
