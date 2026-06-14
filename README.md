@@ -276,6 +276,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [Humanoid Everyday](https://huggingface.co/datasets/USC-PSI-Lab/humanoid-everyday) | `2025` | humanoid | `Data` | Everyday humanoid manipulation data. |
 | [Unitree UnifoLM-WBT Dataset](https://huggingface.co/collections/unitreerobotics/unifolm-wbt-dataset) | `2025` | humanoid | `Data` | Whole-body teleoperation data. |
 | [Fourier ActionNet](https://action-net.org/) | `2026` | humanoid, bimanual | `Data` | Dexterous bimanual humanoid dataset. |
+| [UniDex](https://arxiv.org/abs/2603.22264) | `2026.03` | dexterous-hand, cross-hand | `Data` `Code` `Method` | 50K+ robot-centric dexterous trajectories across eight hands derived from egocentric human videos, with FAAS unified action space and portable capture setup. |
 | [DexCap](https://arxiv.org/abs/2403.07788) | `2024.03` | dexterous-hand | `Code` `Method` | Portable hand mocap and retargeting. |
 | [DexUMI](https://arxiv.org/abs/2505.21864) | `2025.05` | dexterous-hand | `Data` `Method` | Robot-free dexterous collection. |
 | [XL-VLA](https://xl-vla.github.io/) | `2026` | dexterous-hand | `Data` `Code` | Cross-hand teleoperation data and latent action representation. |
@@ -304,6 +305,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [LIBERO-Mem](https://ojs.aaai.org/index.php/AAAI/article/view/37337) | `2026` | single-arm, memory | `Benchmark` | Non-Markovian object-centric memory benchmark. |
 | [RoboChallenge](https://robochallenge.ai/robochallenge_techreport.pdf) | `2025` | real-world manipulation | `Benchmark` | Real-robot evaluation benchmark for embodied policies. |
 | [RoboMME](https://robomme.github.io/) | `2026` | memory-augmented manipulation | `Data` `Code` `Benchmark` | Benchmark for memory-augmented robotic manipulation. |
+| [Real-World Continual VLA Learning](https://arxiv.org/abs/2605.26820) | `2026.05` | real-world manipulation | `Data` `Benchmark` | Sequential real-robot manipulation dataset and evaluation protocol for continual VLA learning and forgetting analysis. |
 
 <br/>
 
@@ -330,7 +332,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [DexUMI](https://arxiv.org/abs/2505.21864) | `2025.05` | dexterous-hand | `Data` `Method` | Human hand collection with robot-hand conversion. |
 | [DexCap](https://arxiv.org/abs/2403.07788) | `2024.03` | dexterous-hand | `Code` `Method` | Hand mocap and retargeting. |
 | [DEX-Mouse](https://arxiv.org/abs/2604.15013) | `2026.04` | dexterous-hand | `Method` | Low-cost force-feedback dexterous teleop. |
-| [SABER](https://huggingface.co/datasets/DreamVu/Retail-VLA-10K) | `2025` | ego, hands, humanoid | `Data` `Method` | Human behavior capture to embodied action supervision. |
+| [SABER](https://arxiv.org/abs/2605.09613) | `2026.05` | ego, hands, humanoid | `Data` `Method` | Robot-free retail behavior capture with egocentric, 360-degree, hand-pose, and whole-body streams retargeted into VLA action supervision. |
 | [Lucid-XR](https://arxiv.org/abs/2605.00244) | `2026.04` | dexterous, robot-free, simulation | `Method` | XR-headset physics simulation, human-to-robot retargeting, and physics-guided video generation for synthetic manipulation data. |
 | [GELLO](https://arxiv.org/abs/2309.13037) | `2023.09` | single-arm, bimanual | `Code` `Method` | Low-cost kinematically matched teleoperation devices for high-quality demonstrations. |
 | [RoboWheel](https://arxiv.org/abs/2512.02729) | `2025.12` | cross-embodiment | `Method` | Human-object interaction reconstruction for robot learning. |
@@ -477,6 +479,9 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | :-- | :-: | :-- | :-- |
 | [ShareRobot](https://huggingface.co/datasets/BAAI/ShareRobot) | `2025` | `Data` `Code` | Task planning, affordance, trajectory, and QA annotations. |
 | [Robo2VLM](https://github.com/KeplerC/robo2VLM) | `2025.05` | `Data` `Code` | VQA generation from pose, gripper, force, and trajectory signals. |
+| [FineVLA](https://arxiv.org/abs/2605.27284) | `2026.05` | `Data` `Code` `Method` | Builds fine-grained action-aligned instruction supervision over 972K trajectories, with human verification and a robotics-specialized VLM annotator. |
+| [ST-VLA / ST-Human](https://arxiv.org/abs/2603.13788) | `2026.03` | `Data` `Method` | Semi-automated 2D/3D/4D annotation pipeline over 300K human manipulation episodes for spatio-temporal VLM-guided robot control. |
+| [Interleave-VLA](https://arxiv.org/abs/2505.02152) | `2025.05` | `Data` `Method` | Converts text-only Open X-Embodiment instructions into 210K interleaved image-text embodied episodes for richer multimodal instruction following. |
 | [CAST](https://arxiv.org/abs/2508.13446) | `2025.08` | `Method` | Counterfactual language/action relabeling that augments existing robot datasets with synthetic trajectory-instruction pairs. |
 | [Q-DIG](https://arxiv.org/abs/2603.12510) | `2026.03` | `Method` | Quality-diversity prompt generation for VLA red-teaming; generated adversarial instructions are used to augment fine-tuning data. |
 | [CLIP-RT](https://arxiv.org/abs/2411.00508) | `2024.11` | `Method` | Language-supervised data collection with stochastic trajectory augmentation and heuristic labeling for language-conditioned robot policies. |
