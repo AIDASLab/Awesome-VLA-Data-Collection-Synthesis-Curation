@@ -347,6 +347,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [DexMimicGen](https://github.com/NVlabs/dexmimicgen) | `2024.10` | bimanual, dexterous | `Data` `Code` | Bimanual dexterous demo generation. |
 | [SoftMimicGen](https://arxiv.org/abs/2603.25725) | `2026.03` | deformable, bimanual, humanoid | `Method` | MimicGen-style automated data generation for rope, towel, tissue, stuffed-animal, surgical, and humanoid deformable manipulation tasks. |
 | [DiffGen](https://arxiv.org/abs/2405.07309) | `2024.05` | simulation, manipulation | `Method` | Differentiable physics, differentiable rendering, and VLM objectives for automatic robot demonstration generation. |
+| [CRAFT](https://arxiv.org/abs/2604.03552) | `2026.04` | bimanual, simulation-to-real | `Code` `Method` | Canny-conditioned video diffusion converts simulator rollouts into action-consistent demonstrations across object pose, lighting, background, viewpoint, and embodiment variations. |
 | [IntervenGen](https://arxiv.org/abs/2405.01472) | `2024.05` | simulation, real-world | `Method` | Expands a small number of human corrective interventions into synthetic recovery demonstrations for robust imitation learning. |
 | [CyberDemo](https://arxiv.org/abs/2402.14795) | `2024.02` | dexterous-hand, simulation | `Data` `Method` | Simulated human demonstrations with domain and task augmentation for real-world dexterous manipulation transfer. |
 | [RoboGen](https://robogen-ai.github.io/) | `2023.11` | manipulation, locomotion | `Code` `Method` | Generative simulation for tasks and supervision. |
@@ -358,6 +359,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboTwin 2.0](https://arxiv.org/abs/2506.18088) | `2025.06` | bimanual, cross-embodiment | `Data` `Code` | Scalable dual-arm generator. |
 | [GenSim](https://arxiv.org/abs/2310.01361) | `2023.10` | simulation, manipulation | `Code` `Method` | LLM-generated simulation tasks, curricula, and expert demonstrations. |
 | [Video2Policy](https://arxiv.org/abs/2502.09886) | `2025.02` | simulation, human / internet video | `Method` | Reconstructs manipulation tasks from internet RGB videos and trains RL policies with LLM-generated rewards. |
+| [V-Dreamer](https://arxiv.org/abs/2603.18811) | `2026.03` | simulation, manipulation | `Method` | Builds language-specified 3D simulation scenes and maps video-generation motion priors into executable robot trajectories via visual-kinematic alignment. |
 | [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) | `2023.10` | simulation, world-model | `Method` | Learns interactive simulators from real-world data for zero-shot policy transfer. |
 | [Scaling Robot Learning with Semantically Imagined Experience](https://arxiv.org/abs/2302.11550) | `2023.02` | simulation, single-arm | `Method` | Semantically imagined experience for scaling robot learning with generated variations. |
 | [MolmoB0T / MolmoBot-Engine](https://www.microsoft.com/en-us/research/publication/molmob0t-large-scale-simulation-enables-zero-shot-manipulation/) | `2025` | single-arm, mobile manipulator | `Data` `Code` | Procedural simulation engine. |
@@ -415,12 +417,19 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | Work | Year | Embodiment | Artifact | Core Mechanism |
 | :-- | :-: | :-- | :-- | :-- |
 | [DreamGen](https://arxiv.org/abs/2505.12705) | `2025.05` | arms, humanoid | `Method` | Video world model to action-labeled neural trajectories. |
+| [RoboDream](https://arxiv.org/abs/2606.02577) | `2026.06` | manipulation, real robot | `Method` | Compositional world model anchors generation to rendered robot motion and synthesizes photorealistic demonstrations with new objects, scenes, and viewpoints. |
+| [GEM-4D](https://arxiv.org/abs/2605.22882) | `2026.05` | manipulation, real/sim | `Method` | Geometry-enhanced video world model uses dense 4D correspondence supervision and inverse dynamics to convert generated rollouts into executable robot trajectories. |
 | [RLDX-1](https://arxiv.org/abs/2605.03269) | `2026.05` | dexterous, humanoid | `Code` `Weights` `Method` | Video generation, motion filtering, and inverse dynamics labels. |
 | [RoboCurate](https://arxiv.org/abs/2602.18742) | `2026.02` | humanoid, dexterous | `Method` | Action-verified neural trajectory filtering. |
+| [AnchorDream](https://arxiv.org/abs/2512.11797) | `2025.12` | manipulation, real robot | `Method` | Embodiment-aware video diffusion conditions on robot motion renderings to scale a few teleoperated demonstrations into diverse action-consistent training data. |
+| [MIND-V](https://arxiv.org/abs/2512.06628) | `2025.12` | long-horizon manipulation | `Method` | Hierarchical robotic video generation combines VLM task planning, conditional video rendering, and RL-based physical alignment for plausible long-horizon synthetic videos. |
 | [EVA](https://arxiv.org/abs/2603.17808) | `2026.03` | bimanual, arms | `Method` | Inverse-dynamics reward for executable videos. |
 | [TC-IDM](https://arxiv.org/abs/2601.18323) | `2026.01` | generated video, 3D motion | `Method` | Tool-centric inverse dynamics model that converts world-model video plans into 6-DoF end-effector motions and controls. |
 | [NovaFlow](https://arxiv.org/abs/2510.08568) | `2025.10` | generated video, 3D flow | `Method` | Distills generated videos into 3D actionable object flow and realizes it with grasp proposals, trajectory optimization, and particle dynamics. |
 | [TraceGen / TraceForge](https://arxiv.org/abs/2511.21690) | `2025.11` | cross-embodiment | `Method` | 3D trace-space world modeling and trace data pipeline. |
+| [RoboMaster](https://arxiv.org/abs/2506.01943) | `2025.06` | manipulation video | `Method` | Trajectory-controlled video generation decomposes robot-object interaction stages to synthesize higher-fidelity manipulation videos. |
+| [RIGVid](https://arxiv.org/abs/2507.00990) | `2025.07` | generated video, manipulation | `Method` | Uses off-the-shelf video diffusion, VLM filtering, 6D pose tracking, and retargeting to imitate generated videos without physical demonstrations. |
+| [Geometry-aware 4D Video Generation](https://arxiv.org/abs/2507.01099) | `2025.07` | generated video, multi-view | `Method` | Enforces multi-view 3D consistency in generated future videos and recovers end-effector trajectories with a 6-DoF pose tracker. |
 
 <a id="-rl--expert-policy-rollouts"></a>
 ### 🎯 RL & Expert-Policy Rollouts
