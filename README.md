@@ -359,8 +359,10 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboCasa365](https://arxiv.org/abs/2603.04356) | `2026.03` | household, mobile manipulation | `Data` `Method` | Large-scale household task suite. |
 | [RoboTwin](https://robotwin-benchmark.github.io/) | `2025.04` | bimanual | `Data` `Code` | Dual-arm digital-twin-style benchmark. |
 | [RoboTwin 2.0](https://arxiv.org/abs/2506.18088) | `2025.06` | bimanual, cross-embodiment | `Data` `Code` | Scalable dual-arm generator. |
+| [InternData-A1](https://arxiv.org/abs/2511.16651) | `2025.11` | cross-embodiment, simulation | `Data` `Method` | Autonomous, decoupled, compositional simulation pipeline (630K+ trajectories, 7,433h); first to show synthetic-only data can match strong real-world pretraining. |
 | [GenSim](https://arxiv.org/abs/2310.01361) | `2023.10` | simulation, manipulation | `Code` `Method` | LLM-generated simulation tasks, curricula, and expert demonstrations. |
 | [Video2Policy](https://arxiv.org/abs/2502.09886) | `2025.02` | simulation, human / internet video | `Method` | Reconstructs manipulation tasks from internet RGB videos and trains RL policies with LLM-generated rewards. |
+| [ReBot](https://arxiv.org/abs/2503.14526) | `2025.03` | single-arm, sim-to-real | `Method` | Real-to-sim-to-real synthesis: replays real trajectories in simulation to diversify objects, then composites them onto inpainted real backgrounds into physically realistic videos. |
 | [V-Dreamer](https://arxiv.org/abs/2603.18811) | `2026.03` | simulation, manipulation | `Method` | Builds language-specified 3D simulation scenes and maps video-generation motion priors into executable robot trajectories via visual-kinematic alignment. |
 | [Learning Interactive Real-World Simulators](https://arxiv.org/abs/2310.06114) | `2023.10` | simulation, world-model | `Method` | Learns interactive simulators from real-world data for zero-shot policy transfer. |
 | [Scaling Robot Learning with Semantically Imagined Experience](https://arxiv.org/abs/2302.11550) | `2023.02` | simulation, single-arm | `Method` | Semantically imagined experience for scaling robot learning with generated variations. |
@@ -399,7 +401,9 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | :-- | :-: | :-- | :-- | :-- |
 | [MIRAGE](https://robot-mirage.github.io/) | `2024.02` | cross-embodiment arms | `Code` `Method` | Robot masking and visual inpainting. |
 | [RoVi-Aug](https://rovi-aug.github.io/) | `2024.09` | cross-embodiment arms | `Code` `Method` | Robot appearance and viewpoint augmentation. |
+| [EgoDemoGen](https://arxiv.org/abs/2509.22578) | `2025.09` | egocentric viewpoint, single-arm | `Method` | Transfers trajectories to novel egocentric viewpoints and re-renders paired observation-action demos via conditional video generation for viewpoint generalization. |
 | [RoboEngine](https://arxiv.org/abs/2503.18738) | `2025.03` | cross-scene robot data | `Method` | Robot segmentation and background generation. |
+| [RoboAug](https://arxiv.org/abs/2602.14032) | `2026.02` | cross-scene robot data | `Method` | Region-contrastive loss plus generative semantic augmentation turns a single annotation into hundreds of task-focused scene variations. |
 | [H2R](https://arxiv.org/abs/2505.11920) | `2025.05` | human video to robot | `Method` | Human hand keypoints to rendered robot motions. |
 | [From Generated Human Videos to Physically Plausible Robot Trajectories](https://arxiv.org/abs/2512.05094) | `2025.12` | humanoid | `Method` `Benchmark` | Converts generated human videos into physically plausible humanoid trajectories through reconstruction, retargeting, and robust policy execution. |
 | [X-Humanoid](https://arxiv.org/abs/2512.04537) | `2025.12` | humanoid | `Data` `Method` | Robotizes human videos into humanoid videos at scale using paired synthetic data and video-to-video generation. |
@@ -440,6 +444,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | :-- | :-: | :-- | :-- | :-- |
 | [RLDG](https://arxiv.org/abs/2412.09858) | `2024.12` | real robot, single-arm | `Code` `Method` | Trains task-specific RL specialists, rolls them out to generate high-quality data, and distills the data into generalist robot policies. |
 | [RDGen](https://arxiv.org/abs/2605.30957) | `2026.05` | sim-real, single-arm | `Method` | Trains RL policies as structured trajectory generators, transfers them to real robots, and harvests successful rollouts as demonstrations for downstream VLA training. |
+| [Scaling Sim-to-Real RL for Robot VLAs with Generative 3D Worlds](https://arxiv.org/abs/2603.18532) | `2026.03` | simulation, RL-generated | `Method` | Language-driven generative 3D worlds spin up hundreds of diverse interactive scenes for scalable sim-to-real RL fine-tuning of VLAs. |
 | [PLD / Deployment-Aligned Data](https://publications.ri.cmu.edu/online-policy-improvement-via-reliable-critics-and-deployment-aligned-data) | `2026.05` | sim-real, VLA post-training | `Method` | Trains lightweight residual RL specialists, collects recovery trajectories from base-policy states, and distills them back into the VLA. |
 | [RL-Driven Data Generation for Dexterous Grasping](https://arxiv.org/abs/2504.18084) | `2025.04` | dexterous-hand, simulation | `Method` | Uses a residual RL teacher skill to generate contact-rich grasping trajectories across object geometries for vision-action policy training. |
 | [Beyond Human Demonstrations](https://arxiv.org/abs/2509.19752) | `2025.09` | simulation, arms | `Method` | Diffusion RL experts generate VLA training data. |
@@ -466,6 +471,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [VLA Foundry](https://github.com/TRI-ML/vla_foundry) | `2026.04` | `Code` `Method` | WebDataset sharding, normalization, action chunking, SE(3) actions, and multi-dataset stats. |
 | [HoloBrain-0 / RoboOrchard](https://arxiv.org/abs/2602.12062) | `2026.02` | `Code` `Method` | Full-stack VLA infrastructure for data curation, training, and deployment. |
 | [Green-VLA](https://arxiv.org/abs/2602.00919) | `2026.02` | `Method` | Temporal alignment, quality filtering, and embodiment-aware action interfaces. |
+| [VISTA](https://arxiv.org/abs/2606.04708) | `2026.06` | `Code` `Data` `Method` | Vision-grounded fisheye VQA grounding plus trajectory-level physical validation curate UMI data, paired with a two-stage co-training recipe for VLA. |
 | [LingBot-VLA](https://github.com/Robbyant/lingbot-vla) | `2026.01` | `Code` `Weights` `Benchmark` | Efficient VLA post-training stack and GM-100 benchmark; raw pretraining data not confirmed open. |
 | [OpenVLA Data Tooling](https://github.com/openvla/openvla) | `2024` | `Code` | OXE mixture conversion and fine-tuning utilities. |
 | [LeRobot Dataset Format](https://huggingface.co/docs/lerobot/index) | `2024` | `Code` | Standardized robot dataset format and tooling. |
