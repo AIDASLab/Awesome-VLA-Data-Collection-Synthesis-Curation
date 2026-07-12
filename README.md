@@ -12,7 +12,7 @@
   <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/>
 </a>
 <img src="https://img.shields.io/badge/Maintained-2026-8A2BE2?style=for-the-badge&logo=github&logoColor=white" alt="Maintained"/>
-<img src="https://img.shields.io/badge/Papers-100+-FF6F00?style=for-the-badge&logo=arxiv&logoColor=white" alt="Papers"/>
+<img src="https://img.shields.io/badge/Papers-120%2B-FF6F00?style=for-the-badge&logo=arxiv&logoColor=white" alt="Papers"/>
 
 <br/><br/>
 
@@ -217,6 +217,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [Survey of Vision-Language-Action Models for Embodied Manipulation](https://arxiv.org/abs/2508.15201) | `2025.08` | VLA methods and embodied manipulation. |
 | [What Matters in Building Vision-Language-Action Models for Generalist Robots](https://www.nature.com/articles/s42256-025-01168-7) | `2025` | Empirical study on VLA data and design choices. |
 | [A Tutorial Note on Collecting Simulated Data for Vision-Language-Action Models](https://arxiv.org/abs/2508.06547) | `2025.08` | Simulated VLA data collection. |
+| [Robots Need More than VLA and World Models](https://arxiv.org/abs/2606.06556) | `2026.06` | Position paper on converting unstructured behavior into grounded robot supervision through data, embodiment, world-model, and reward interfaces. |
 
 <a id="-related-repos"></a>
 ### 🧭 Related Repos
@@ -265,6 +266,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RH20T](https://rh20t.github.io/) | `2023` | single-arm | `Data` | Robot-human multimodal manipulation. |
 | [CLAMP](https://arxiv.org/abs/2505.21495) | `2025.05` | tactile, robot-free | `Data` `Code` | In-the-wild multimodal haptic dataset collected with a low-cost open-source device. |
 | [Kaiwu](https://arxiv.org/abs/2503.05231) | `2025.03` | human, robot, multimodal | `Data` | Synchronized multimodal manipulation data with pressure, audio, mocap, gaze, EMG, and fine-grained labels. |
+| [H-Tac / Transferable Tactile Pre-Training](https://arxiv.org/abs/2607.01067) | `2026.07` | human tactile, dexterous-hand | `Data` `Method` | Large-scale tactile-action dataset and unified tactile/action spaces for human-to-robot dexterous transfer. |
 | [RoboSet / RoboHive](https://github.com/vikashplus/robohive/wiki/7.-Datasets) | `2023` | arms, hands | `Data` `Code` | Real and simulated robot learning data. |
 | [RoboNet](https://www.robonet.wiki/) | `2020` | multi-robot | `Data` `Code` | Shared multi-robot experience dataset. |
 
@@ -337,6 +339,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [GELLO](https://arxiv.org/abs/2309.13037) | `2023.09` | single-arm, bimanual | `Code` `Method` | Low-cost kinematically matched teleoperation devices for high-quality demonstrations. |
 | [RoboWheel](https://arxiv.org/abs/2512.02729) | `2025.12` | cross-embodiment | `Method` | Human-object interaction reconstruction for robot learning. |
 | [MV-UMI](https://mv-umi.github.io/) | `2026` | cross-embodiment | `Method` | Multi-view UMI-style interface for cross-embodiment learning. |
+| [Smooth Operator](https://arxiv.org/abs/2607.07491) | `2026.07` | dexterous-hand, teleoperation | `Method` | Sampling-based low-jitter kinematic hand retargeting for higher-quality dexterous teleoperation data. |
 | [Touch in the Wild](https://arxiv.org/abs/2507.15062) | `2025.07` | robot-free, tactile | `Method` | Portable visuo-tactile gripper for fine-grained in-the-wild demonstrations. |
 
 <a id="-simulation-based-demonstration-generation"></a>
@@ -373,6 +376,8 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [DynaMimicGen](https://arxiv.org/abs/2511.16223) | `2025.11` | dynamic manipulation | `Method` | Data generation for dynamic tasks. |
 | [MoMaGen](https://arxiv.org/abs/2510.18316) | `2025.10` | bimanual mobile | `Method` | Reachability and visibility constrained generation. |
 | [HumanoidGen](https://arxiv.org/abs/2507.00833) | `2025.07` | humanoid, dexterous | `Data` `Code` | LLM/MCTS-generated humanoid dexterous demos. |
+| [FurnitureVLA](https://arxiv.org/abs/2607.01212) | `2026.07` | bimanual, simulation, real-world | `Method` | Scalable simulation expert-data pipeline plus VR bimanual teleoperation for real-scale long-horizon furniture assembly. |
+| [ACT-VLA](https://arxiv.org/abs/2607.00351) | `2026.07` | simulation, manipulation | `Method` | Offline action-compositional data augmentation synthesizes novel physically valid demonstrations from existing tasks. |
 
 <a id="-3d-reconstruction--digital-twin-generation"></a>
 ### 🧱 3D Reconstruction & Digital-Twin Generation
@@ -416,6 +421,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [OmniRetarget](https://omniretarget.github.io/) | `2025.09` | humanoid | `Method` | Whole-body humanoid motion retargeting. |
 | [SPIDER](https://jc-bao.github.io/spider/) | `2026` | dexterous, humanoid | `Method` | Physics-based retargeting for hands and humanoids. |
 | [Perceptive Humanoid Parkour](https://arxiv.org/abs/2602.15827) | `2026.02` | humanoid | `Method` | Retargets and composes atomic human parkour skills with motion matching, then distills them into a depth-based real-robot policy. |
+| [Human-as-Humanoid](https://arxiv.org/abs/2606.32009) | `2026.06` | humanoid, human video | `Method` | Converts synchronized ego-exo human videos into controller-aligned 60-DoF humanoid action chunks for VLA training. |
 
 <a id="-neural-trajectory-synthesis--labeling"></a>
 ### 🧠 Neural Trajectory Synthesis & Labeling
@@ -473,6 +479,8 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [Green-VLA](https://arxiv.org/abs/2602.00919) | `2026.02` | `Method` | Temporal alignment, quality filtering, and embodiment-aware action interfaces. |
 | [VISTA](https://arxiv.org/abs/2606.04708) | `2026.06` | `Code` `Data` `Method` | Vision-grounded fisheye VQA grounding plus trajectory-level physical validation curate UMI data, paired with a two-stage co-training recipe for VLA. |
 | [LingBot-VLA](https://github.com/Robbyant/lingbot-vla) | `2026.01` | `Code` `Weights` `Benchmark` | Efficient VLA post-training stack and GM-100 benchmark; raw pretraining data not confirmed open. |
+| [LingBot-VLA 2.0](https://arxiv.org/abs/2607.06403) | `2026.07` | `Code` `Weights` `Benchmark` `Method` | Revamps data processing and curation for 60K hours of robot trajectories and egocentric human videos; raw pretraining data not confirmed open. |
+| [SIEVE](https://arxiv.org/abs/2607.06442) | `2026.07` | `Code` `Method` | Structure-aware VLA data selection discovers visuo-motor primitives and selects stable medoid trajectories for efficient imitation learning. |
 | [OpenVLA Data Tooling](https://github.com/openvla/openvla) | `2024` | `Code` | OXE mixture conversion and fine-tuning utilities. |
 | [LeRobot Dataset Format](https://huggingface.co/docs/lerobot/index) | `2024` | `Code` | Standardized robot dataset format and tooling. |
 | [Hybrid-VLA Data Pipeline](https://github.com/PKU-HMI-Lab/Hybrid-VLA) | `2025` | `Code` | RLDS conversion, action tokenization, and multimodal collation. |
@@ -510,6 +518,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboCasa365](https://arxiv.org/abs/2603.04356) | `2026.03` | `Data` `Method` | Large-scale household task and demonstration suite. |
 | [MolmoBot-Engine](https://www.microsoft.com/en-us/research/publication/molmob0t-large-scale-simulation-enables-zero-shot-manipulation/) | `2025` | `Data` `Code` | Procedural task and scene generation. |
 | [ABot-N0 Data Engine](https://arxiv.org/abs/2602.11598) | `2026.02` | `Method` | Expert trajectories and reasoning samples for embodied navigation. |
+| [SPARK](https://arxiv.org/abs/2606.30613) | `2026.06` | `Method` | Training-free neurosymbolic manipulation planner logs verified labeled trajectories that can bootstrap VLA policy data. |
 | [RESample](https://arxiv.org/abs/2510.17640) | `2025.10` | `Method` | Offline-RL critic and exploratory rollout sampling generate OOD/recovery data to improve VLA robustness. |
 
 <br/>
