@@ -12,7 +12,7 @@
   <img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/>
 </a>
 <img src="https://img.shields.io/badge/Maintained-2026-8A2BE2?style=for-the-badge&logo=github&logoColor=white" alt="Maintained"/>
-<img src="https://img.shields.io/badge/Papers-120%2B-FF6F00?style=for-the-badge&logo=arxiv&logoColor=white" alt="Papers"/>
+<img src="https://img.shields.io/badge/Papers-220%2B-FF6F00?style=for-the-badge&logo=arxiv&logoColor=white" alt="Papers"/>
 
 <br/><br/>
 
@@ -218,6 +218,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [What Matters in Building Vision-Language-Action Models for Generalist Robots](https://www.nature.com/articles/s42256-025-01168-7) | `2025` | Empirical study on VLA data and design choices. |
 | [A Tutorial Note on Collecting Simulated Data for Vision-Language-Action Models](https://arxiv.org/abs/2508.06547) | `2025.08` | Simulated VLA data collection. |
 | [Robots Need More than VLA and World Models](https://arxiv.org/abs/2606.06556) | `2026.06` | Position paper on converting unstructured behavior into grounded robot supervision through data, embodiment, world-model, and reward interfaces. |
+| [Data Pyramid for Embodied Manipulation: A Survey](https://arxiv.org/abs/2607.24744) | `2026.07` | Organizes real-robot, UMI, ego/exo video, simulation, and vision-language data along scalability and alignment axes. |
 
 <a id="-related-repos"></a>
 ### 🧭 Related Repos
@@ -269,6 +270,12 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [H-Tac / Transferable Tactile Pre-Training](https://arxiv.org/abs/2607.01067) | `2026.07` | human tactile, dexterous-hand | `Data` `Method` | Large-scale tactile-action dataset and unified tactile/action spaces for human-to-robot dexterous transfer. |
 | [RoboSet / RoboHive](https://github.com/vikashplus/robohive/wiki/7.-Datasets) | `2023` | arms, hands | `Data` `Code` | Real and simulated robot learning data. |
 | [RoboNet](https://www.robonet.wiki/) | `2020` | multi-robot | `Data` `Code` | Shared multi-robot experience dataset. |
+| [N0-Foundation / OpenNeoData](https://arxiv.org/abs/2608.29601) | `2026.08` | cross-embodiment, tactile, UMI | `Data` `Code` `Benchmark` `Method` | 30K+ hours of NeoData and a released 5K-hour OpenNeoData subset spanning six embodiments and 450 tasks. |
+| [Open-AoE](https://arxiv.org/abs/2607.14183) | `2026.07` | human egocentric, robot-free | `Data` `Code` `Method` | 2K hours from 500+ contributors with hand pose, camera trajectory, atomic actions, and retargeting tools. |
+| [HiFi-UMI / HiFi-UMI-2K](https://arxiv.org/abs/2607.25895) | `2026.07` | robot-free, bimanual | `Data` `Method` | Open 2K-hour UMI corpus with microsecond synchronization, wide FoV, and simulation-replay validation. |
+| [HuRo](https://arxiv.org/abs/2609.10706) | `2026.09` | human-to-robot, cross-embodiment | `Data` `Code` `Method` | Robotizes five human-video sources into 630K episodes and 142M frames. |
+| [Scaling Bimanual Household Manipulation from 1,500 Hours of Demonstrations to On-Policy Corrections](https://arxiv.org/abs/2609.03591) | `2026.09` | bimanual, household | `Data` `Method` | Open 1,500-hour bimanual corpus and a study of scaling from offline demonstrations to DAgger corrections. |
+| [Ego-OSCAR](https://arxiv.org/abs/2608.08285) | `2026.08` | robot-free, egocentric | `Data` `Code` `Method` | Low-cost open capture hardware and 550 hours of stereo, IMU, action-caption, and 3D-hand data. |
 
 <a id="-humanoid--dexterous-corpora"></a>
 ### 🦾 Humanoid & Dexterous Corpora
@@ -283,6 +290,10 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [DexUMI](https://arxiv.org/abs/2505.21864) | `2025.05` | dexterous-hand | `Data` `Method` | Robot-free dexterous collection. |
 | [XL-VLA](https://xl-vla.github.io/) | `2026` | dexterous-hand | `Data` `Code` | Cross-hand teleoperation data and latent action representation. |
 | [RealSource-World](https://huggingface.co/datasets/RealSourceData/RealSource-World) | `2025` | humanoid, arms | `Data` | Real robot data release. |
+| [ACE-Data-0](https://arxiv.org/abs/2607.28625) | `2026.07` | human, humanoid, dexterous, multimodal | `Method` `Benchmark` | 150 hours and 75K synchronized ego/exo, full-body, hand, object-pose, audio, and tactile episodes. |
+| [PRISM](https://arxiv.org/abs/2608.17962) | `2026.08` | industrial, bimanual, contact-rich | `Data` | 5K trajectories across 25+ industrial tasks with synchronized RGB-D, force/torque, tactile, and robot state. |
+| [CosmoH2G](https://arxiv.org/abs/2609.07498) | `2026.09` | human-hand to gripper | `Method` | Paired transfer data with 6,189 episodes over 1,254 objects, including high-rotation and flipping motions. |
+| [A4A](https://arxiv.org/abs/2609.05892) | `2026.09` | human-to-robot, cross-embodiment | `Method` | Builds language-conditioned 4D point trajectories as action-oriented affordance data for VLA pretraining. |
 
 <a id="-benchmarks--evaluation-suites"></a>
 ### 🧪 Benchmarks & Evaluation Suites
@@ -308,6 +319,23 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboChallenge](https://robochallenge.ai/robochallenge_techreport.pdf) | `2025` | real-world manipulation | `Benchmark` | Real-robot evaluation benchmark for embodied policies. |
 | [RoboMME](https://robomme.github.io/) | `2026` | memory-augmented manipulation | `Data` `Code` `Benchmark` | Benchmark for memory-augmented robotic manipulation. |
 | [Real-World Continual VLA Learning](https://arxiv.org/abs/2605.26820) | `2026.05` | real-world manipulation | `Data` `Benchmark` | Sequential real-robot manipulation dataset and evaluation protocol for continual VLA learning and forgetting analysis. |
+| [FolDeX](https://arxiv.org/abs/2609.10243) | `2026.09` | real-world, bimanual, deformable | `Benchmark` `Method` | Evaluates intervention, recovery, and cross-task, scene, and embodiment reuse over 2K+ hours. |
+| [RoboReel / Monkey See, Can Monkey Do?](https://arxiv.org/abs/2609.08209) | `2026.09` | human-video learning from observation | `Benchmark` | Human videos and simulated trajectories across ten tasks and four evaluation suites. |
+| [MEMOBench](https://arxiv.org/abs/2609.07047) | `2026.09` | memory-augmented manipulation | `Data` `Benchmark` | 30 tasks, 1,500 expert demonstrations, and 4,200 checkpoints for memory storage, update, and compression. |
+| [RoboSPA](https://arxiv.org/abs/2609.05324) | `2026.09` | spatial and procedural VLA | `Data` `Code` `Benchmark` | Separates spatial ambiguity from procedural complexity with 527K trajectories over 56 base tasks. |
+| [Behavior-Skill](https://arxiv.org/abs/2608.30536) | `2026.08` | long-horizon household | `Data` `Code` `Benchmark` | Extracts 235K skill instances from 10K demonstrations with restorable states and success predicates. |
+| [The Imitator Game / IG-10K](https://arxiv.org/abs/2608.22301) | `2026.08` | human-to-robot imitation | `Data` `Benchmark` | 20K+ paired episodes across 50+ tasks and six domains, evaluating motion replay through intent imitation. |
+| [H2R-Bench](https://arxiv.org/abs/2608.13049) | `2026.08` | human-to-robot video generation | `Benchmark` `Method` | Evaluates goal completion, action events, functional contact, embodiment correctness, and video quality. |
+| [SoftVTBench](https://arxiv.org/abs/2608.18701) | `2026.08` | deformable, visuo-tactile | `Benchmark` `Method` | 4K demonstrations and 50+ assets with RGB, tactile, and FEM ground truth. |
+| [LabDex](https://arxiv.org/abs/2608.18618) | `2026.08` | real/sim chemistry lab, dexterous | `Benchmark` `Method` | Three-level atomic, compositional, and long-horizon taxonomy with cross-platform protocols. |
+| [XPolicyLab](https://arxiv.org/abs/2608.09892) | `2026.08` | sim/real policy evaluation | `Code` `Benchmark` | Unifies 42 policies and environments behind common observation, action, and trajectory schemas. |
+| [WorldSimProbe](https://arxiv.org/abs/2608.09298) | `2026.08` | action-conditioned world models | `Data` `Code` `Benchmark` | 18K+ instances probing action realization, interaction grounding, and dynamics. |
+| [GAUGE](https://arxiv.org/abs/2608.05948) | `2026.08` | physics engines and video world models | `Benchmark` | Measures physical fidelity over 22 real-grounded rigid and deformable task families. |
+| [XEWorld](https://arxiv.org/abs/2608.05799) | `2026.08` | unseen robot embodiments | `Benchmark` | Controlled world-model testbed that changes only a held-out robot embodiment in the same scene. |
+| [KineBench](https://arxiv.org/abs/2607.19876) | `2026.07` | embodied world models | `Benchmark` | Extracts and executes 6D end-effector poses without an inverse-dynamics model and measures feasibility. |
+| [LabRobFail](https://arxiv.org/abs/2607.23704) | `2026.07` | chemical self-driving lab | `Data` `Code` `Benchmark` | 20K+ failure trajectories across 70+ scenarios and 11 failure types. |
+| [InstructMove](https://arxiv.org/abs/2608.22990) | `2026.08` | language-conditioned manipulation | `Data` `Code` `Benchmark` | Preserves visually plausible alternatives to test whether language is truly necessary for action selection. |
+| [Peg-in-Bench](https://arxiv.org/abs/2609.00906) | `2026.09` | high-precision insertion | `Code` `Benchmark` | Modular 3D-printable insertion benchmark with machine-readable scenario generation. |
 
 <br/>
 
@@ -341,6 +369,20 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [MV-UMI](https://mv-umi.github.io/) | `2026` | cross-embodiment | `Method` | Multi-view UMI-style interface for cross-embodiment learning. |
 | [Smooth Operator](https://arxiv.org/abs/2607.07491) | `2026.07` | dexterous-hand, teleoperation | `Method` | Sampling-based low-jitter kinematic hand retargeting for higher-quality dexterous teleoperation data. |
 | [Touch in the Wild](https://arxiv.org/abs/2507.15062) | `2025.07` | robot-free, tactile | `Method` | Portable visuo-tactile gripper for fine-grained in-the-wild demonstrations. |
+| [SEED-UMI](https://arxiv.org/abs/2609.11753) | `2026.09` | dexterous-hand, human-to-robot | `Method` | Uses the same exoskeleton on human and robot hands to collect paired cross-embodiment supervision. |
+| [SPOT](https://arxiv.org/abs/2609.07933) | `2026.09` | humanoid, whole-body | `Method` | Wide stereo fisheye, stabilized viewing, and decoupled free-looking extend the operator's perceptual horizon. |
+| [M3-Tele](https://arxiv.org/abs/2609.07859) | `2026.09` | mobile-manipulator, whole-body | `Method` | Captures aligned vision, tactile, force, and proprioception while improving compliance and data quality. |
+| [Show-Harness / GUMI](https://arxiv.org/abs/2609.10522) | `2026.09` | cross-embodiment | `Method` | GUI semantic-action interface decouples human and agent demonstration collection from specialized teleoperation hardware. |
+| [MINT / EGOPIPELINE](https://arxiv.org/abs/2609.04958) | `2026.09` | human egocentric | `Data` `Code` `Method` | Generates world-space camera and hand pseudo-labels from public videos, yielding a curated 1,021-hour trajectory corpus. |
+| [Teleopit](https://arxiv.org/abs/2608.01834) | `2026.08` | humanoid, dexterous-hand | `Method` | Unified VR control of body, hands, head, and active vision with failure-aware rewind sampling. |
+| [Panorama-Aware VLA with Whole-Body Teleoperation](https://arxiv.org/abs/2608.02257) | `2026.08` | mobile bimanual | `Method` | Combines VR whole-body collection, panorama-aware observations, and a 5.5-hour multimodal dataset. |
+| [DexDirect](https://arxiv.org/abs/2607.27784) | `2026.07` | dexterous-hand | `Method` | Combines arm kinesthetic guidance with single-webcam hand retargeting for high-throughput demonstrations. |
+| [ViHaTeleop](https://arxiv.org/abs/2608.16572) | `2026.08` | dexterous-hand | `Method` | Low-cost visual-haptic teleoperation with finger-wise vibrotactile feedback for contact-critical tasks. |
+| [Koala Gripper](https://arxiv.org/abs/2608.20546) | `2026.08` | robot-free, robot gripper | `Method` | Co-designs the morphology and ergonomics of a handheld capture device and execution gripper. |
+| [ModPack](https://arxiv.org/abs/2607.19479) | `2026.07` | bimanual mobile | `Code` `Method` | Open wearable backpack with plug-and-play haptic, mobile, and active-perception modules. |
+| [MEVION](https://arxiv.org/abs/2607.17970) | `2026.07` | high-force dual-arm | `Code` `Method` | Open dual-arm platform for collecting demonstrations over a wider force and speed range. |
+| [Data and Learning Where It Matters](https://arxiv.org/abs/2607.15982) | `2026.07` | contact-rich, real-world | `Method` | Plans free-space motion and densely collects only critical contact segments. |
+| [NeuralActuator / NAD](https://arxiv.org/abs/2607.11734) | `2026.07` | cross-actuator, teleoperation | `Data` `Code` `Method` | Collects actuator telemetry and external-force labels from twin-arm teleoperation to learn dynamics and force models. |
 
 <a id="-simulation-based-demonstration-generation"></a>
 ### 🏗️ Simulation-Based Demonstration Generation
@@ -378,6 +420,17 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [HumanoidGen](https://arxiv.org/abs/2507.00833) | `2025.07` | humanoid, dexterous | `Data` `Code` | LLM/MCTS-generated humanoid dexterous demos. |
 | [FurnitureVLA](https://arxiv.org/abs/2607.01212) | `2026.07` | bimanual, simulation, real-world | `Method` | Scalable simulation expert-data pipeline plus VR bimanual teleoperation for real-scale long-horizon furniture assembly. |
 | [ACT-VLA](https://arxiv.org/abs/2607.00351) | `2026.07` | simulation, manipulation | `Method` | Offline action-compositional data augmentation synthesizes novel physically valid demonstrations from existing tasks. |
+| [AXIS](https://arxiv.org/abs/2607.21588) | `2026.07` | browser teleop, simulation | `Benchmark` `Method` | Integrated data engine for task generation, success validation, smoothing, and visual and physics augmentation. |
+| [WANDA / Worlds in One Demo](https://arxiv.org/abs/2607.13154) | `2026.07` | mobile manipulation, real-to-sim | `Data` `Method` | Turns one RGB-D demonstration into reconstructed scene and trajectory variants across scene, pose, and embodiment. |
+| [DREAM](https://arxiv.org/abs/2608.29078) | `2026.08` | deployment-time real-to-sim | `Method` | Generates and validates goals, success criteria, and TAMP trajectories from workspace capture and language. |
+| [TableVerse](https://arxiv.org/abs/2607.21017) | `2026.07` | tabletop real-to-sim | `Method` | Converts in-the-wild images into 100K physically stable interactive scenes and collision-free demonstrations. |
+| [4DSynth](https://arxiv.org/abs/2608.26947) | `2026.08` | dynamic embodied simulation | `Method` `Benchmark` | Generates editable geometry, animated actors, collision-free paths, and physics-ready state from multimodal prompts. |
+| [IM-ENGINE](https://arxiv.org/abs/2609.06279) | `2026.09` | simulator-grounded image editing | `Method` | Converts semantic image edits into 3D recovery, physics refinement, and validated grasps, goals, and trajectories. |
+| [GIF](https://arxiv.org/abs/2609.05927) | `2026.09` | functional object composition | `Method` `Benchmark` | Combines generated meshes, relative-pose recovery, and VLM verification into interaction-ready scene assets. |
+| [DynamicManip](https://arxiv.org/abs/2608.01452) | `2026.08` | dynamic manipulation | `Code` `Method` `Benchmark` | Synthesizes moving-object demonstrations from one static demonstration and provides automatic evaluation. |
+| [Pre-training Visual Dexterity in Simulation](https://arxiv.org/abs/2608.15917) | `2026.08` | VR, dexterous, simulation | `Method` | Collects 75 hours of on-embodiment VR demonstrations for real dexterous fine-tuning. |
+| [LTLDiff](https://arxiv.org/abs/2609.11043) | `2026.09` | multi-agent manipulation | `Method` | Uses language-derived LTLf specifications to condition both demonstration generation and diffusion policies. |
+| [DenseReward](https://arxiv.org/abs/2607.13033) | `2026.07` | failure synthesis, sim-to-real | `Data` `Weights` `Benchmark` `Method` | Synthesizes collision, missed-grasp, drop, and recovery trajectories with dense frame-level rewards. |
 
 <a id="-3d-reconstruction--digital-twin-generation"></a>
 ### 🧱 3D Reconstruction & Digital-Twin Generation
@@ -398,6 +451,9 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [EMMA](https://arxiv.org/abs/2509.22407) | `2025.09` | real-world, single-arm | `Method` | Generative visual transfer via multi-view consistent embodied manipulation video editing. |
 | [ERMV](https://arxiv.org/abs/2507.17462) | `2025.07` | multi-view, VLA | `Method` | Edits 4D robotic multi-view image sequences with geometric, temporal, and robot-state consistency for VLA data augmentation. |
 | [AOMGen](https://arxiv.org/abs/2512.18396) | `2025.12` | articulated objects, simulation | `Method` | Photoreal, physics-consistent demonstration generation for articulated objects from a single scan, demonstration, and digital assets. |
+| [Agentic Real2Sim](https://arxiv.org/abs/2607.19190) | `2026.07` | rigid, deformable, humanoid | `Method` | VLM agents assemble geometry, physics, cameras, poses, and trajectories into runnable episodic digital twins. |
+| [R2S-EGO](https://arxiv.org/abs/2608.06827) | `2026.08` | sparse-capture real-to-sim | `Method` | Synthesizes missing egocentric views to refine visual assets and collision surfaces under sparse capture. |
+| [NavArena](https://arxiv.org/abs/2609.04602) | `2026.09` | 3DGS navigation | `Method` `Benchmark` | Couples fixed 3DGS scenes with RGB-D rendering, occupancy, and semantic goals to generate 22.2M expert trajectories. |
 
 <a id="-cross-embodiment-augmentation--retargeting"></a>
 ### 🔁 Cross-Embodiment Augmentation & Retargeting
@@ -422,6 +478,15 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [SPIDER](https://jc-bao.github.io/spider/) | `2026` | dexterous, humanoid | `Method` | Physics-based retargeting for hands and humanoids. |
 | [Perceptive Humanoid Parkour](https://arxiv.org/abs/2602.15827) | `2026.02` | humanoid | `Method` | Retargets and composes atomic human parkour skills with motion matching, then distills them into a depth-based real-robot policy. |
 | [Human-as-Humanoid](https://arxiv.org/abs/2606.32009) | `2026.06` | humanoid, human video | `Method` | Converts synchronized ego-exo human videos into controller-aligned 60-DoF humanoid action chunks for VLA training. |
+| [Ego2Robot](https://arxiv.org/abs/2608.02580) | `2026.08` | ego human to 15 robot morphologies | `Method` | Action retargeting, robot-arm rendering, and multilevel curation produce 18,561 hours of robot-format data. |
+| [Dex-X](https://arxiv.org/abs/2609.07747) | `2026.09` | human video to visual-tactile robot | `Method` | Reconstructs monocular human-object interaction in simulation and adds tactile supervision from contact dynamics. |
+| [C2Dex](https://arxiv.org/abs/2608.07045) | `2026.08` | monocular human to dexterous robot | `Method` | Jointly constrains reconstruction and retargeting through canonical object-space contacts and residual RL. |
+| [Unified Motion Retargeting](https://arxiv.org/abs/2609.02134) | `2026.09` | human motion to humanoid | `Method` | Uses learned dense point-cloud correspondence as a common retargeting interface. |
+| [RoboReact](https://arxiv.org/abs/2608.03387) | `2026.08` | generated ego video to humanoid | `Method` | Chains video generation, 3D keyframes, whole-body retargeting, online re-grounding, and VLM refinement. |
+| [Pegasus / From Passive Video to Editable Experience](https://arxiv.org/abs/2607.26903) | `2026.07` | human video to robot experience | `Method` | Builds task, affordance, constraint, and planning graphs with physics verification for robot-conditioned data. |
+| [HOST](https://arxiv.org/abs/2607.20033) | `2026.07` | one human video to robot skill | `Method` | Aligns human demonstrations and robot action targets through a shared progress manifold. |
+| [EgoRecovery](https://arxiv.org/abs/2607.19745) | `2026.07` | human recovery to robot recovery | `Method` | Co-trains human recovery segments with limited robot recovery data in a shared corrective-intent space. |
+| [UCAG-P / One Policy, Many Embodiments](https://arxiv.org/abs/2608.26058) | `2026.08` | arms, humanoids, human hands | `Method` | Aligns heterogeneous datasets through camera-observable anchor motion as shared action geometry. |
 
 <a id="-neural-trajectory-synthesis--labeling"></a>
 ### 🧠 Neural Trajectory Synthesis & Labeling
@@ -442,6 +507,14 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboMaster](https://arxiv.org/abs/2506.01943) | `2025.06` | manipulation video | `Method` | Trajectory-controlled video generation decomposes robot-object interaction stages to synthesize higher-fidelity manipulation videos. |
 | [RIGVid](https://arxiv.org/abs/2507.00990) | `2025.07` | generated video, manipulation | `Method` | Uses off-the-shelf video diffusion, VLM filtering, 6D pose tracking, and retargeting to imitate generated videos without physical demonstrations. |
 | [Geometry-aware 4D Video Generation](https://arxiv.org/abs/2507.01099) | `2025.07` | generated video, multi-view | `Method` | Enforces multi-view 3D consistency in generated future videos and recovers end-effector trajectories with a 6-DoF pose tracker. |
+| [Zero-WAM / HumanGen](https://arxiv.org/abs/2608.26103) | `2026.08` | human-video in-context learning | `Method` | Converts robot trajectories into matched human videos, producing 74.2K paired samples over 8.6K tasks. |
+| [LD4WAM](https://arxiv.org/abs/2608.22403) | `2026.08` | human and robot video | `Method` | Learns embodiment-agnostic motion-aligned latent dynamics from 5K hours of curated video. |
+| [LAWM-3D](https://arxiv.org/abs/2608.05706) | `2026.08` | multi-view human video | `Method` | Learns actionable 3D motion with view-invariant latent actions, 3D feature alignment, and RGB-D reconstruction. |
+| [CLAP](https://arxiv.org/abs/2608.27406) | `2026.08` | cross-embodiment video world model | `Code` `Weights` `Method` | Grounds latent actions to end-effector motion and unifies human and robot video in an action-conditioned simulator. |
+| [ViTacWorld](https://arxiv.org/abs/2607.22530) | `2026.07` | visual-tactile world model | `Method` | Learns from real and simulated visuo-tactile trajectories for aligned rollout generation and policy evaluation. |
+| [FlowWAM](https://arxiv.org/abs/2607.13017) | `2026.07` | unlabeled video to visual actions | `Method` | Uses optical flow as a video-native unified action for action-free pretraining and control. |
+| [WorldSync / Do Robotic World Models Really Follow Actions?](https://arxiv.org/abs/2608.24885) | `2026.08` | off-expert action distributions | `Method` `Benchmark` | Diagnoses and improves world-model action fidelity through coverage, grounding, and intervention alignment. |
+| [VQ-Touch](https://arxiv.org/abs/2607.14728) | `2026.07` | tactile synthesis | `Method` | Scales cross-sensor and multi-scenario tactile-image generation with few-shot mixed training. |
 
 <a id="-rl--expert-policy-rollouts"></a>
 ### 🎯 RL & Expert-Policy Rollouts
@@ -456,6 +529,12 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [Beyond Human Demonstrations](https://arxiv.org/abs/2509.19752) | `2025.09` | simulation, arms | `Method` | Diffusion RL experts generate VLA training data. |
 | [Discover, Learn, and Reinforce](https://arxiv.org/abs/2511.19528) | `2025.11` | simulation, arms | `Method` | Diverse RL rollouts for VLA pretraining. |
 | [OmniReset](https://weirdlabuw.github.io/omnireset/) | `2025` | arms, dexterous | `Code` `Method` | Diverse resets, RL experts, and RGB distillation. |
+| [HERO / Practice Makes Policies](https://arxiv.org/abs/2607.26809) | `2026.07` | autonomous real-world collection | `Method` | Bootstraps experience without human demonstrations via heuristic reasoning, exemplar reuse, and reflexive execution. |
+| [EXIMO](https://arxiv.org/abs/2608.19891) | `2026.08` | VLM-guided exploration | `Method` | A VLM decomposes long-horizon tasks to collect VLA rollouts refined by imitation and residual RL. |
+| [Fine-Tuning VLAs with Self-Demonstrated Generative Control](https://arxiv.org/abs/2608.19490) | `2026.08` | target-robot online rollout | `Method` | Uses a zero-shot VLA's own interaction rollouts to adapt to a new embodiment while reducing forgetting. |
+| [Max-Q Selective Imitation](https://arxiv.org/abs/2608.15088) | `2026.08` | human-in-the-loop online RL | `Method` | Selects the higher-value action between human interventions and current-policy actions as imitation targets. |
+| [MiDAS / Adaptation of Generalist Robot Policies with Minimal Data](https://arxiv.org/abs/2608.11363) | `2026.08` | one/few demo, online interaction | `Method` | Anchors a VLA with one demonstration, then accumulates autonomous data through residual online RL. |
+| [SymmGrid](https://arxiv.org/abs/2607.26985) | `2026.07` | on-robot RL | `Method` | Expands replay-buffer state-action trajectories with admissible symmetry transformations. |
 
 <br/>
 
@@ -472,7 +551,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 
 | Work | Year | Artifact | Pipeline |
 | :-- | :-: | :-- | :-- |
-| [Robust Learning from Demonstrations with Mixed Qualities Using Leveraged Gaussian Processes](https://doi.org/10.1109/TRO.2019.2891173) | `2019` | autonomous driving, LfD | `Method` | Estimates demonstration quality via leveraged Gaussian processes to learn robustly from unlabeled mixed-quality demonstrations. |
+| [Robust Learning from Demonstrations with Mixed Qualities Using Leveraged Gaussian Processes](https://doi.org/10.1109/TRO.2019.2891173) | `2019` | `Method` | Estimates demonstration quality via leveraged Gaussian processes to learn robustly from unlabeled mixed-quality demonstrations. |
 | [ABot-M0 / UniACT](https://arxiv.org/abs/2602.11236) | `2026.02` | `Method` | Cleans, standardizes, and balances heterogeneous public datasets into UniACT. |
 | [VLA Foundry](https://github.com/TRI-ML/vla_foundry) | `2026.04` | `Code` `Method` | WebDataset sharding, normalization, action chunking, SE(3) actions, and multi-dataset stats. |
 | [HoloBrain-0 / RoboOrchard](https://arxiv.org/abs/2602.12062) | `2026.02` | `Code` `Method` | Full-stack VLA infrastructure for data curation, training, and deployment. |
@@ -485,6 +564,18 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [LeRobot Dataset Format](https://huggingface.co/docs/lerobot/index) | `2024` | `Code` | Standardized robot dataset format and tooling. |
 | [Hybrid-VLA Data Pipeline](https://github.com/PKU-HMI-Lab/Hybrid-VLA) | `2025` | `Code` | RLDS conversion, action tokenization, and multimodal collation. |
 | [Qwen-VLA](https://arxiv.org/abs/2605.30280) | `2026.05` | `Method` | Large-scale joint pretraining recipe across robot trajectories, egocentric demonstrations, synthetic simulation, VLN, trajectory supervision, and VLM data. |
+| [RoboDrop](https://arxiv.org/abs/2609.10021) | `2026.09` | `Method` | Audits and filters episodes with execution errors, drift, and timestamp mismatch using local gradient compatibility. |
+| [SiMDex](https://arxiv.org/abs/2608.04196) | `2026.08` | `Method` | Selects 1.49M motion-similar samples from 32M egocentric samples instead of indiscriminate mixing. |
+| [ConfAL-WM](https://arxiv.org/abs/2608.25572) | `2026.08` | `Method` | Allocates target-domain world-model data budgets using task-, frame-, and patch-level confidence. |
+| [Auditing Instruction-Trajectory Mismatches](https://arxiv.org/abs/2608.07895) | `2026.08` | `Method` | Detects mismatched language through multimodal neighborhood and prototype agreement for filtering or relabeling. |
+| [CFNBC / It's Not Just More Demos](https://arxiv.org/abs/2607.27261) | `2026.07` | `Method` | Selects compact robustness-repair sets using policy action drift under task-preserving nuisances. |
+| [Hierarchical Skill Retrieval](https://arxiv.org/abs/2608.24042) | `2026.08` | `Code` `Method` | Retrieves reusable demonstrations through task decomposition, skill reliability, and behavior reranking. |
+| [Scale Up Strategically](https://arxiv.org/abs/2607.21582) | `2026.07` | `Method` | Diagnoses factor bias and reallocates a fixed collection budget toward under-grounded factors. |
+| [When Does Legacy Data Start to Help?](https://arxiv.org/abs/2607.25593) | `2026.07` | `Method` | Determines when legacy demonstrations become reusable after robot hardware upgrades. |
+| [DEED / Closing the Lab-to-Store Gap](https://arxiv.org/abs/2607.20345) | `2026.07` | `Method` | Deployment pipeline for control-frequency alignment, curation, visual highlighting, and intervention refinement. |
+| [GE-Act 2.0](https://arxiv.org/abs/2609.05588) | `2026.09` | `Method` | Filters behavioral mismatches between predicted futures and recorded actions for joint supervision. |
+| [VLAct / Beyond Data Scaling](https://arxiv.org/abs/2608.27550) | `2026.08` | `Code` `Weights` `Method` | Data-efficient pretraining through preserved VLM priors, multi-head action supervision, and a partially unified layout. |
+| [OpenWAM](https://arxiv.org/abs/2609.07398) | `2026.09` | `Code` `Weights` `Method` | Open controlled WAM pretraining stack, recipes, and protocols over 6.4K hours of egocentric and robot data. |
 
 <a id="-annotation--relabeling"></a>
 ### 🏷️ Annotation & Relabeling
@@ -504,7 +595,11 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [RoboAfford++](https://www.emergentmind.com/topics/roboafford-dataset) | `2025` | `Method` | Generative affordance and spatial reasoning annotations. |
 | [Being-H0](https://arxiv.org/abs/2507.15597) | `2025.07` | `Method` | Human video, mocap, and VR data curation for dexterous VLA pretraining. |
 | [RLDX-1](https://arxiv.org/abs/2605.03269) | `2026.05` | `Code` `Weights` `Method` | Inverse dynamics labels for synthetic rare manipulation scenarios. |
-| [RoboInter](https://lihaohn.github.io/RoboInter.github.io/) | `2026` | `Method` | Intermediate representations and VQA/VLA-oriented robotic annotations. |
+| [RoboInter1.5](https://arxiv.org/abs/2607.18709) | `2026.07` | `Method` | 230K+ episodes over 571 scenes with ten-plus dense intermediate labels; supersedes the existing RoboInter entry. |
+| [Xiaomi-Robotics-1](https://arxiv.org/abs/2607.15330) | `2026.07` | `Method` | Automatically labels state transitions over 100K+ hours of UMI trajectories for two-stage VLA alignment. |
+| [VLAff / EgoAffordance](https://arxiv.org/abs/2608.05215) | `2026.08` | `Method` | Adds 5.6M visual and 11.6M grasp and trajectory affordances to 204K episodes. |
+| [RynnValue](https://arxiv.org/abs/2608.09853) | `2026.08` | `Weights` `Method` | Derives temporal-distance labels from timestamps to build value supervision over 7K hours and 3M clips. |
+| [CometVLA / CometData](https://arxiv.org/abs/2608.30289) | `2026.08` | `Benchmark` `Method` | Co-trains a data pyramid with embodied physical VQA aligned to the robot action domain. |
 
 <a id="-task-curation--dataset-design"></a>
 ### 🧩 Task Curation & Dataset Design
@@ -520,6 +615,10 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [ABot-N0 Data Engine](https://arxiv.org/abs/2602.11598) | `2026.02` | `Method` | Expert trajectories and reasoning samples for embodied navigation. |
 | [SPARK](https://arxiv.org/abs/2606.30613) | `2026.06` | `Method` | Training-free neurosymbolic manipulation planner logs verified labeled trajectories that can bootstrap VLA policy data. |
 | [RESample](https://arxiv.org/abs/2510.17640) | `2025.10` | `Method` | Offline-RL critic and exploratory rollout sampling generate OOD/recovery data to improve VLA robustness. |
+| [MAGE / UseAppliance](https://arxiv.org/abs/2608.15863) | `2026.08` | `Data` `Method` | Converts appliance manuals into grounded parts, 53K tasks, and 33K closed-loop adjustment steps. |
+| [RoboGraph / Compiling and Benchmarking Task-State Horizons](https://arxiv.org/abs/2608.08036) | `2026.08` | `Benchmark` `Method` | Compiles spatial and temporal dependencies, failures, and interventions into executable symbolic task graphs. |
+| [TaPeR](https://arxiv.org/abs/2608.21035) | `2026.08` | `Method` | Recovers partial-order task graphs from a few demonstrations using kinematics and relative-pose distributions. |
+| [DISEIL](https://arxiv.org/abs/2609.08123) | `2026.09` | `Method` | Clusters recurring failures to request the content and starting state of the next human demonstration. |
 
 <br/>
 
