@@ -235,6 +235,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | Resource | Focus |
 | :-- | :-- |
 | [LeRobot Documentation](https://huggingface.co/docs/lerobot/index) | Robot datasets, policies, and tooling. |
+| [LeRobot Dataset Format Explained](https://roboskin.ai/guides/lerobot-dataset-format) | Independent v3.0 tutorial on episode boundaries, timestamps, and numeric validation, with synthetic fixtures and a separate official writer/loader exercise. |
 | [OpenVLA](https://github.com/openvla/openvla) | OXE preprocessing and VLA fine-tuning. |
 | [VLA Foundry](https://github.com/TRI-ML/vla_foundry) | Unified LLM/VLM/VLA training and robot data preprocessing. |
 
