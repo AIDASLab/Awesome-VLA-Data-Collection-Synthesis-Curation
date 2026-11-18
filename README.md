@@ -561,6 +561,7 @@ A curated list of data-centric methods for Vision-Language-Action models and rob
 | [LingBot-VLA 2.0](https://arxiv.org/abs/2607.06403) | `2026.07` | `Code` `Weights` `Benchmark` `Method` | Revamps data processing and curation for 60K hours of robot trajectories and egocentric human videos; raw pretraining data not confirmed open. |
 | [SIEVE](https://arxiv.org/abs/2607.06442) | `2026.07` | `Code` `Method` | Structure-aware VLA data selection discovers visuo-motor primitives and selects stable medoid trajectories for efficient imitation learning. |
 | [OpenVLA Data Tooling](https://github.com/openvla/openvla) | `2024` | `Code` | OXE mixture conversion and fine-tuning utilities. |
+| [leCop](https://github.com/michele-xilo/leCop) | `2026` | `Code` | Fast LeRobot dataset health checker: finds broken episodes, timestamp drift, wrong stats and video/metadata mismatches without decoding video. |
 | [LeRobot Dataset Format](https://huggingface.co/docs/lerobot/index) | `2024` | `Code` | Standardized robot dataset format and tooling. |
 | [Hybrid-VLA Data Pipeline](https://github.com/PKU-HMI-Lab/Hybrid-VLA) | `2025` | `Code` | RLDS conversion, action tokenization, and multimodal collation. |
 | [Qwen-VLA](https://arxiv.org/abs/2605.30280) | `2026.05` | `Method` | Large-scale joint pretraining recipe across robot trajectories, egocentric demonstrations, synthetic simulation, VLN, trajectory supervision, and VLM data. |
